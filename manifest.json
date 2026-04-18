@@ -1,51 +1,84 @@
 {
-  "id": "/Personal-Assistant/",
-  "name": "Personal Assistant",
-  "short_name": "Assistant",
-  "start_url": "/Personal-Assistant/",
-  "scope": "/Personal-Assistant/",
+  "id": "/",
+  "name": "Second Brain",
+  "short_name": "Second Brain",
+  "description": "Personal OS — kelola task, catatan, keuangan, dan jadwal kamu dalam satu tempat",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#4F46E5",
-  "theme_color": "#4F46E5",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "background_color": "#0e0e0e",
+  "theme_color": "#4B6EFF",
+  "orientation": "portrait",
+  "lang": "id",
+  "dir": "ltr",
+  "categories": ["productivity", "utilities", "finance"],
+  "prefer_related_applications": false,
   "icons": [
     {
-      "src": "icons/icon-192x192-A.png",
+      "src": "icons/icon-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
-      "src": "icons/icon-512x512-B.png",
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/icon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
   "screenshots": [
     {
       "src": "icons/screenshot1.png",
       "sizes": "1080x1920",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Halaman Home Second Brain"
     },
     {
       "src": "icons/screenshot2.png",
       "sizes": "1080x1920",
-      "type": "image/png"
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Halaman Keuangan Second Brain"
     }
   ],
   "shortcuts": [
     {
-      "name": "Buka Beranda",
+      "name": "Home",
       "short_name": "Home",
-      "url": "./index.html",
-      "icons": [
-        {
-          "src": "icons/icon-192x192-A.png",
-          "sizes": "192x192"
-        }
-      ]
+      "description": "Buka halaman utama",
+      "url": "./index.html#home",
+      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Tugas Baru",
+      "short_name": "Tambah Task",
+      "description": "Langsung tambah task baru",
+      "url": "./index.html#tasks",
+      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192" }]
     }
   ],
-  "categories": [
-    "productivity",
-    "utilities"
-  ]
+  "share_target": {
+    "action": "./index.html",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
 }
