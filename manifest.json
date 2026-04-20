@@ -106,8 +106,35 @@
     }
   ],
 
-  "related_applications": [],
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://giri-fpxu.github.io/Personal-Assistant/",
+      "id": "/Personal-Assistant/"
+    }
+  ],
+
   "prefer_related_applications": false,
 
-  "iarc_rating_id": "e7b6c4f1-1234-5678-aaaa-bbbbccccdddd"
+  "iarc_rating_id": "e7b6c4f1-1234-5678-aaaa-bbbbccccdddd",
+
+  "widgets": [
+    {
+      "name": "Quick Add",
+      "short_name": "Add",
+      "description": "Tambah task cepat",
+      "src": "/Personal-Assistant/",
+      "sizes": "300x300"
+    }
+  ],
+
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+
+  "scope_extensions": [
+    {
+      "origin": "https://giri-fpxu.github.io"
+    }
+  ]
 }
