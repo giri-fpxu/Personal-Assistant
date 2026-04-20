@@ -136,12 +136,13 @@
 
   "widgets": [
     {
-      "name": "Quick Add",
-      "short_name": "Add",
-      "description": "Tambah task cepat",
-      "src": "/Personal-Assistant/#tasks",
-      "sizes": "300x300",
-      "type": "application/widget"
+    "name": "Quick Add",
+    "short_name": "Add",
+    "description": "Tambah task cepat",
+    "src": "/Personal-Assistant/#tasks",
+    "sizes": "300x300",
+    "type": "application/widget",
+    "display": "standalone"
     }
   ],
 
@@ -151,7 +152,8 @@
 
   "scope_extensions": [
     {
-      "origin": "https://giri-fpxu.github.io"
+    "origin": "https://giri-fpxu.github.io",
+    "scope": "/Personal-Assistant/"
     }
   ]
 }
