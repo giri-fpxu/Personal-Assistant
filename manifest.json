@@ -1,84 +1,25 @@
 {
-  "id": "/",
+  "id": "/Personal-Assistant/",
   "name": "Second Brain",
   "short_name": "Second Brain",
   "description": "Personal OS — kelola task, catatan, keuangan, dan jadwal kamu dalam satu tempat",
-  "start_url": "./index.html",
-  "scope": "./",
+  "start_url": "/Personal-Assistant/",
+  "scope": "/Personal-Assistant/",
   "display": "standalone",
-  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
   "background_color": "#0e0e0e",
   "theme_color": "#4B6EFF",
   "orientation": "portrait",
   "lang": "id",
-  "dir": "ltr",
-  "categories": ["productivity", "utilities", "finance"],
-  "prefer_related_applications": false,
   "icons": [
     {
       "src": "icons/icon-192x192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
+      "type": "image/png"
     },
     {
       "src": "icons/icon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "type": "image/png"
     }
-  ],
-  "screenshots": [
-    {
-      "src": "icons/screenshot1.png",
-      "sizes": "1080x1920",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Halaman Home Second Brain"
-    },
-    {
-      "src": "icons/screenshot2.png",
-      "sizes": "1080x1920",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Halaman Keuangan Second Brain"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Home",
-      "short_name": "Home",
-      "description": "Buka halaman utama",
-      "url": "./index.html#home",
-      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "Tugas Baru",
-      "short_name": "Tambah Task",
-      "description": "Langsung tambah task baru",
-      "url": "./index.html#tasks",
-      "icons": [{ "src": "icons/icon-192x192.png", "sizes": "192x192" }]
-    }
-  ],
-  "share_target": {
-    "action": "./index.html",
-    "method": "GET",
-    "params": {
-      "title": "title",
-      "text": "text",
-      "url": "url"
-    }
-  }
+  ]
 }
