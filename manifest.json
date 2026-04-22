@@ -8,7 +8,12 @@
   "scope": "/Personal-Assistant/",
 
   "display": "standalone",
-  "display_override": ["window-controls-overlay", "standalone", "minimal-ui", "tabbed"],
+  "display_override": [
+    "window-controls-overlay",
+    "tabbed",
+    "standalone",
+    "minimal-ui"
+  ],
 
   "background_color": "#0e0e0e",
   "theme_color": "#4B6EFF",
@@ -136,13 +141,12 @@
 
   "widgets": [
     {
-    "name": "Quick Add",
-    "short_name": "Add",
-    "description": "Tambah task cepat",
-    "src": "/Personal-Assistant/#tasks",
-    "sizes": "300x300",
-    "type": "application/widget",
-    "display": "standalone"
+      "name": "Quick Add",
+      "short_name": "Add",
+      "description": "Tambah task cepat",
+      "src": "/Personal-Assistant/#tasks",
+      "sizes": "300x300",
+      "type": "application/widget"
     }
   ],
 
@@ -152,8 +156,8 @@
 
   "scope_extensions": [
     {
-    "origin": "https://giri-fpxu.github.io",
-    "scope": "/Personal-Assistant/"
+      "origin": "https://giri-fpxu.github.io",
+      "scope": "/Personal-Assistant/"
     }
   ]
 }
