@@ -195,10 +195,10 @@
   },
 
   "scope_extensions": [
-    {
-      "origin": "https://giri-fpxu.github.io"
-    }
-  ],
-
-  "handle_links": "preferred"
+  {
+    "type": "origin",
+    "origin": "https://giri-fpxu.github.io",
+    "scope": "/Personal-Assistant/"
+  }
+]
 }
