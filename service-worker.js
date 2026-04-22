@@ -9,11 +9,11 @@ const CACHE_NAME = 'second-brain-v1';
    ✏️ Jangan masukkan URL eksternal (font, CDN) di sini
    Font & resource eksternal di-cache saat pertama kali diakses */
 const PRECACHE_FILES = [
-  './',
-  './index.html',
-  './manifest.json',
-  './icons/icon-192x192.png',
-  './icons/icon-512x512.png',
+  '/Personal-Assistant/',
+  '/Personal-Assistant/index.html',
+  '/Personal-Assistant/manifest.json',
+  '/Personal-Assistant/icons/icon-192x192.png',
+  '/Personal-Assistant/icons/icon-512x512.png',
 ];
 
 /* ════════════════════════════════════════════════════
