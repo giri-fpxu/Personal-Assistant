@@ -12,6 +12,7 @@ const PRECACHE_FILES = [
   '/Personal-Assistant/',
   '/Personal-Assistant/index.html',
   '/Personal-Assistant/manifest.json',
+  '/Personal-Assistant/offline.html', // ← INI LU MASUKIN
   '/Personal-Assistant/icons/icon-192x192.png',
   '/Personal-Assistant/icons/icon-512x512.png',
 ];
@@ -85,7 +86,11 @@ self.addEventListener('fetch', event => {
           }
           return res;
         })
-        .catch(() => caches.match('./index.html'))
+        .catch(() =>
+          caches.match(req).then(res =>
+            res || caches.match('/Personal-Assistant/index.html')
+  )
+        )
     );
     return;
   }
