@@ -1,24 +1,25 @@
 {
-  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
   "type": "AdaptiveCard",
-  "version": "1.5",
   "body": [
     {
       "type": "TextBlock",
-      "text": "Quick Add Task",
+      "size": "Medium",
       "weight": "Bolder",
-      "size": "Medium"
+      "text": "Quick Add Task"
     },
     {
-      "type": "Input.Text",
-      "id": "task",
-      "placeholder": "Masukkan task..."
+      "type": "TextBlock",
+      "text": "Klik buat buka app",
+      "spacing": "Small"
     }
   ],
   "actions": [
     {
-      "type": "Action.Submit",
-      "title": "Tambah"
+      "type": "Action.OpenUrl",
+      "title": "Tambah Task",
+      "url": "https://giri-fpxu.github.io/Personal-Assistant/#tasks"
     }
-  ]
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.5"
 }
