@@ -3724,7 +3724,7 @@
     /* ── INIT APP ── */
     function initApp(acc) {
       // theme
-      const dark = localStorage.getItem('sb4_theme') !== 'light';
+      const dark = localStorage.getItem('sb4_theme') !== 'dark';
       document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
       document.getElementById('tog-theme').checked = !dark;
       // color
